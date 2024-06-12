@@ -29,7 +29,11 @@ public class SampleClassMediator extends AbstractMediator {
 
     public boolean mediate(MessageContext messageContext) {
         //Write your logic here
-        log.info("This is a sample class mediator");
-        return false;
+        log.debug("This is a debug log");
+        log.info("This is a info log");
+        log.warn("This is a warn log");
+        log.error("This is a error log");
+
+        return true;
     }
 }
