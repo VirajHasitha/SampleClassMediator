@@ -20,16 +20,16 @@ package com.wso2.example;
 
 import org.apache.synapse.MessageContext;
 import org.apache.synapse.mediators.AbstractMediator;
-import org.apache.synapse.core.axis2.Axis2MessageContext;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.apache.axiom.om.OMElement;
+
 
 public class SampleClassMediator extends AbstractMediator {
     private static final Log log = LogFactory.getLog(SampleClassMediator.class);
 
     public boolean mediate(MessageContext messageContext) {
         //Write your logic here
+        log.info("This is a sample class mediator");
         return false;
     }
 }
